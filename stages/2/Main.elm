@@ -21,7 +21,7 @@ type alias ResultId =
   Int
 
 
-{-| TODO add a type annotation to this function
+{-| TODO add a type annotation to this value
 -}
 model =
   { query = "tutorial"
