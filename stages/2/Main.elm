@@ -21,7 +21,7 @@ type alias ResultId =
   Int
 
 
-{-| TODO add a type annotation to this function
+{-| TODO add a type annotation to this value
 -}
 model =
   { query = "tutorial"
@@ -75,7 +75,6 @@ viewSearchResult result =
     , a
         [ href ("https://github.com/" ++ result.name), target "_blank" ]
         [ text result.name ]
-    , text result.name
     ]
 
 
