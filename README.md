@@ -61,7 +61,7 @@ elm package install
 Once that succeeds, run this to verify everything:
 
 ```bash
-elm live Main.elm --open --output=elm.js
+elm-live Main.elm --open --output=elm.js
 ```
 
 A browser should open, and you should see this in it:
