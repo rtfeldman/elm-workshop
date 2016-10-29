@@ -6,7 +6,7 @@ import Test.Runner.Html as Runner
 
 -- To run this:
 --
--- cd into part8/test
+-- cd into part10/test
 -- elm-reactor
 -- navigate to HtmlRunner.elm
 
