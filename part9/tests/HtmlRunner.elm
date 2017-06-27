@@ -1,7 +1,7 @@
 module HtmlRunner exposing (..)
 
-import Tests
 import Test.Runner.Html as Runner
+import Tests
 
 
 -- To run this:
@@ -11,6 +11,6 @@ import Test.Runner.Html as Runner
 -- navigate to HtmlRunner.elm
 
 
-main : Program Never Model Msg
+main : Runner.TestProgram
 main =
     Runner.run Tests.all
