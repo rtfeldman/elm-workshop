@@ -1,8 +1,8 @@
 port module Main exposing (..)
 
-import Tests
-import Test.Runner.Node as Runner
 import Json.Decode exposing (Value)
+import Test.Runner.Node as Runner
+import Tests
 
 
 -- To run this:
@@ -10,7 +10,7 @@ import Json.Decode exposing (Value)
 -- elm-test
 
 
-main : Program Value
+main : Runner.TestProgram
 main =
     Runner.run emit Tests.all
 
