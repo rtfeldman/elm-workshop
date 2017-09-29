@@ -23,13 +23,13 @@ we kind of need to understand a few things.
 One thing to understand is that `elm` compiles to `JavaScript`.
 So what does that mean?
 To explain this, I want to start by looking at something else
-that compiles to `JavaScriot`, namely `Babel`.
+that compiles to `JavaScript`, namely `Babel`.
 
 > https://babeljs.io/repl/
 
 So this is `Babel`, probably you are familiar with this,
 but for those that are not the basic idea is that
-`Babel` compiles future (_or current_) `JavaScriot` spec to
+`Babel` compiles future (_or current_) `JavaScript` spec to
 backwards-compatible `JavaScript` for older browsers.
 
 ES2015 Code:
@@ -59,7 +59,7 @@ So in order to write code like this,
 and end up with code that can run on
 Internet Explorer 10, for example,
 you could run it through something like `Babel`.
-So `Bable` will take this code
+So `Babel` will take this code
 and it will generate _this_ code (_gestures to the code on the right side_)
 It will _compile_ to this `JavaScript` (_on the right_).
 The basic idea here is that you write this code on the left
@@ -117,7 +117,7 @@ The only difference is that instead of showing you the _compiled_ `JavaScript`
 on the _right_, it's instead just running it through the browser.
 So on the _left_ we have the `elm` code
 it's _getting_ compiled to `JavaScript` in the same way that `Babel` does,
-and then "try `elm`" is _immeadiately_ handing that off to the browser
+and then "try `elm`" is _immediately_ handing that off to the browser
 so the browser can _run_ it.
 And this right here is the same function we had over there,
 it's the same implementation except instead of writing in "ES6"
@@ -134,7 +134,7 @@ So we can see that in `Babel` we are writing
 `let` and then `pluralize` _equals_
 whereas in `elm` we are writing `pluralize`
 followed by the _arguments_ followed by the equals (`=`);
-the arguments go to the _left_ of the quals sign.
+the arguments go to the _left_ of the equals sign.
 Where as in `Babel` (_ES2015_) they are in parentheses with commas
 after the the name of the function.
 
@@ -178,7 +178,7 @@ when you're actually disambiguating something.
 
 ![elm-workshop-double-equals](https://cloud.githubusercontent.com/assets/194400/21491663/3f3d0cc2-cbf6-11e6-84d4-6b1cb97ed775.png)
 
-Also note that in `elm` we use _double_ equals (`==`) instead of _tripple_ equals (`===`),
+Also note that in `elm` we use _double_ equals (`==`) instead of _triple_ equals (`===`),
 there actually is _no_ triple equals operator built-in to `elm`
 because _double_ equals (`==`) just works the way you want it to.
 So there is no
@@ -205,7 +205,7 @@ like this _instead_ of an `if`:
 quantity === 1 ? singular : plural
 ```
 and that is what this is properly,
-this refers to, the `JavaScript` _equvalent_ of this `elm` code really
+this refers to, the `JavaScript` _equivalent_ of this `elm` code really
 is not an `if` statement but rather a
 [_ternary expression_](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 like this.
