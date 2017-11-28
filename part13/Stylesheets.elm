@@ -13,11 +13,6 @@ cssFiles =
     toFileStructure [ ( "style.css", compile [ ElmHubCss.css ] ) ]
 
 
-main : Program Never Model Msg
+main : CssCompilerProgram
 main =
-    Html.program
-        { init = ( (), files cssFiles )
-        , view = \_ -> (div [] [])
-        , update = \_ _ -> ( (), Cmd.none )
-        , subscriptions = \_ -> Sub.none
-        }
+    Css.File.compiler files cssFiles
